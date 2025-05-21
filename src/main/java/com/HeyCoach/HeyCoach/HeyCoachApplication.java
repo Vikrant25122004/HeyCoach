@@ -11,7 +11,6 @@ public class HeyCoachApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HeyCoachApplication.class, args);
 	}
-
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
