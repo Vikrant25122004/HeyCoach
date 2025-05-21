@@ -2,6 +2,7 @@ package com.HeyCoach.HeyCoach.Controllers;
 
 import com.HeyCoach.HeyCoach.Services.mockinterview;
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.http.*;
@@ -14,6 +15,7 @@ import java.io.ByteArrayOutputStream;
 
 @RestController
 @RequestMapping("/mock")
+@Tag(name = "get mock interview questions of your job description")
 public class MockInterview {
     @Autowired
     private mockinterview mockinterview;

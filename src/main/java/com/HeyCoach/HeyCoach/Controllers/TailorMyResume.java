@@ -2,6 +2,7 @@ package com.HeyCoach.HeyCoach.Controllers;
 
 import com.HeyCoach.HeyCoach.Services.tailorResumeService;
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -12,6 +13,7 @@ import java.io.ByteArrayOutputStream;
 
 @RestController
 @RequestMapping("/Tailor-Resume")
+@Tag(name = "make your resume template in free based on particular job description ")
 public class TailorMyResume {
 
     @Autowired

@@ -3,6 +3,7 @@ package com.HeyCoach.HeyCoach.Controllers;
 import com.HeyCoach.HeyCoach.Entity.ExistingJobs;
 import com.HeyCoach.HeyCoach.Entity.Jobs;
 import com.HeyCoach.HeyCoach.Services.ExistingJobsService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@Tag(name = "Get all jobs of your preference")
 public class ExistingJobsController {
     @Autowired
     private ExistingJobsService existingJobsService;
