@@ -64,9 +64,11 @@ Edit
 
 | Method | Endpoint                    | Description                              |
 |--------|-----------------------------|------------------------------------------|
-| `POST` | `/api/jobmarket`            | Get job market trends using Gemini       |
-| `POST` | `/api/resume/generate`      | Generate a custom resume (PDF/Docx)      |
-| `POST` | `/api/mock-interview`       | Get mock interview questions             |
+| `POST` | `/jobmarkettrend`           | Get job market trends using Gemini       |
+| `POST` | `/resume/generate`          | Generate a custom resume (PDF/Docx)      |
+| `POST` | `/mock-interview`           | Get mock interview questions             |
+| `POST` | `/getalljobs`               | to get all existing jobs based of your
+                                         preference                               |
 | `GET`  | `/swagger-ui/index.html`    | Swagger UI for API documentation         |
 
 ---
